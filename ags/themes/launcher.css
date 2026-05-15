@@ -1,0 +1,447 @@
+* {
+  all: unset;
+  font-family: "Adwaita Sans", "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  color: #d8d8e8;
+}
+
+window#launcher {
+  background: transparent;
+}
+
+box#launcher-content {
+  background: #13131a;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  padding: 0;
+  min-width: 720px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.40),
+    0 20px 60px rgba(0, 0, 0, 0.60);
+}
+#launcher-content.wallpaper-active {
+  min-height: 540px;
+}
+
+.search-container {
+  background: transparent;
+  padding: 18px 22px;
+}
+
+.search-icon {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 16px;
+  color: #4a4a5a;
+  margin-right: 12px;
+  min-width: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+}
+
+.search-entry {
+  background: transparent;
+  caret-color: rgba(160, 130, 255, 0.50);
+  padding: 0;
+  font-size: 16px;
+  color: #d8d8e8;
+  font-weight: 500;
+}
+
+.search-entry selection {
+  background: rgba(130, 110, 240, 0.20);
+}
+
+.search-entry placeholder {
+  color: #3a3a4a;
+  font-style: normal;
+}
+
+.search-separator {
+  background: rgba(255, 255, 255, 0.07);
+  min-height: 1px;
+}
+
+.back-button {
+  font-size: 17px;
+  padding: 0 8px 0 0;
+  color: #3a3a4a;
+  min-width: 28px;
+}
+
+.back-button:hover {
+  color: rgba(160, 130, 255, 0.60);
+}
+
+.section-header {
+  padding: 8px 22px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #4a4a5a;
+  text-transform: uppercase;
+}
+
+.list-item {
+  background: transparent;
+  border: none;
+  border-left: 2px solid transparent;
+  border-radius: 0;
+  padding: 12px 22px;
+  margin: 0;
+  transition: all 80ms ease;
+}
+
+.list-item:hover {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.list-item.focused {
+  background: rgba(130, 110, 240, 0.08);
+  border-left: 2px solid rgba(130, 110, 240, 0.25);
+  padding: 12px 22px 12px 20px;
+  box-shadow: 0 1px 6px rgba(130, 110, 240, 0.08);
+}
+
+.list-item-icon {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 20px;
+  min-width: 32px;
+  color: rgba(255, 255, 255, 0.30);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.30);
+}
+
+.list-item.focused .list-item-icon {
+  color: rgba(160, 130, 255, 0.70);
+}
+
+.list-item-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #d8d8e8;
+}
+
+.list-item.focused .list-item-title {
+  color: rgba(200, 180, 255, 0.95);
+}
+
+.list-item-desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: #3a3a4a;
+}
+
+.list-item-app-icon {
+  -gtk-icon-size: 24px;
+  margin-right: 4px;
+}
+
+.category-graficas .list-item-icon { color: #a78bfa; }
+.category-terminal .list-item-icon { color: #22d3ee; }
+.category-utilidades .list-item-icon { color: #60a5fa; }
+.category-desarrollo .list-item-icon { color: #c084fc; }
+.category-internet .list-item-icon { color: #34d399; }
+.category-multimedia .list-item-icon { color: #f472b6; }
+.category-oficina .list-item-icon { color: #fbbf24; }
+.category-sistema .list-item-icon { color: #fb923c; }
+.category-juegos .list-item-icon { color: #ef4444; }
+.category-otras .list-item-icon { color: #94a3b8; }
+
+.footer {
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 10px 22px;
+  font-size: 11px;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.10);
+}
+
+.footer-key {
+  color: #5a5a6e;
+}
+
+.footer-desc {
+  color: #4a4a5a;
+}
+
+.scroll-container {
+  background: transparent;
+  padding: 2px 0 18px;
+}
+
+.results-scroll {
+  background: transparent;
+}
+
+scrollbar {
+  background: transparent;
+  min-width: 6px;
+  min-height: 6px;
+}
+scrollbar slider {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  min-width: 6px;
+  min-height: 40px;
+}
+scrollbar slider:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+scrollbar trough {
+  background: transparent;
+  border: none;
+}
+
+.web-install-form {
+  padding: 6px 22px 12px;
+}
+.web-install-form entry {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #d8d8e8;
+  caret-color: rgba(160, 130, 255, 0.50);
+}
+.web-install-form entry:focus {
+  border-color: rgba(160, 130, 255, 0.30);
+}
+.web-install-btn {
+  background: rgba(130, 110, 240, 0.15);
+  border: 1px solid rgba(130, 110, 240, 0.25);
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(200, 180, 255, 0.90);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20);
+}
+.web-install-btn:hover {
+  background: rgba(130, 110, 240, 0.25);
+  box-shadow: 0 2px 8px rgba(130, 110, 240, 0.12);
+}
+.empty-state {
+  color: #3a3a4a;
+  font-size: 14px;
+  padding: 28px 22px;
+}
+
+.wallpaper-empty {
+  color: #3a3a4a;
+  font-size: 14px;
+  padding: 0px 22px;
+}
+
+.wallpaper-tabs {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  margin: 2px 14px;
+}
+.wallpaper-tab {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5a5a6e;
+}
+.wallpaper-tab:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #9a9aaa;
+}
+.wallpaper-tab-active {
+  background: rgba(130, 110, 240, 0.15);
+  color: rgba(200, 180, 255, 0.90);
+}
+
+.wallpaper-grid-row {
+  padding: 0 14px;
+}
+.wallpaper-grid-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 0;
+  margin: 2px;
+  transition: all 120ms ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
+}
+.wallpaper-grid-btn:hover {
+  border-color: rgba(130, 110, 240, 0.50);
+  box-shadow: 0 4px 16px rgba(130, 110, 240, 0.15), 0 0 0 2px rgba(130, 110, 240, 0.12);
+}
+.wallpaper-grid-pic {
+  border-radius: 10px;
+  min-width: 200px;
+  min-height: 200px;
+}
+.wallpaper-grid-active {
+  border-color: rgba(52, 211, 153, 0.50);
+  box-shadow: 0 2px 8px rgba(52, 211, 153, 0.15), 0 0 0 2px rgba(52, 211, 153, 0.20);
+}
+.wallpaper-grid-active:hover {
+  border-color: rgba(52, 211, 153, 0.60);
+  box-shadow: 0 4px 16px rgba(52, 211, 153, 0.25), 0 0 0 2px rgba(52, 211, 153, 0.30);
+}
+.wallpaper-toolbar {
+  padding: 0 14px;
+  min-height: 20px;
+}
+.wallpaper-action-btn {
+  background: rgba(130, 110, 240, 0.08);
+  border: 1px solid rgba(130, 110, 240, 0.15);
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(200, 180, 255, 0.80);
+  min-height: 0;
+  transition: all 100ms ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+}
+.wallpaper-action-btn:hover {
+  background: rgba(130, 110, 240, 0.18);
+  color: rgba(200, 180, 255, 0.95);
+  box-shadow: 0 2px 6px rgba(130, 110, 240, 0.12);
+}
+.wallpaper-undo-btn {
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.20);
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(52, 211, 153, 0.80);
+  min-height: 0;
+  transition: all 100ms ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+}
+.wallpaper-undo-btn:hover {
+  background: rgba(52, 211, 153, 0.18);
+  color: #34d399;
+  box-shadow: 0 2px 6px rgba(52, 211, 153, 0.12);
+}
+.web-remove-btn {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 8px;
+  min-width: 0;
+  min-height: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.25);
+}
+.web-remove-btn:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.10);
+}
+
+.wallpaper-popup-backdrop {
+  background: rgba(0, 0, 0, 0.70);
+  transition: all 200ms ease;
+}
+.wallpaper-popup-close-area {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.wallpaper-popup-box {
+  background: #1a1a24;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  padding: 0;
+  min-width: 520px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.70), 0 0 0 1px rgba(0, 0, 0, 0.30);
+}
+.wallpaper-popup-header {
+  padding: 12px 16px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.wallpaper-popup-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d8d8e8;
+}
+.wallpaper-popup-close-btn {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.30);
+  min-height: 0;
+}
+.wallpaper-popup-close-btn:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.10);
+}
+.wallpaper-popup-pic {
+  min-height: 300px;
+  padding: 12px;
+}
+.wallpaper-popup-footer {
+  padding: 8px 16px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.wallpaper-popup-btn {
+  background: rgba(130, 110, 240, 0.12);
+  border: 1px solid rgba(130, 110, 240, 0.20);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(200, 180, 255, 0.90);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20);
+}
+.wallpaper-popup-btn:hover {
+  background: rgba(130, 110, 240, 0.22);
+  box-shadow: 0 2px 8px rgba(130, 110, 240, 0.15);
+}
+.wallpaper-popup-btn-primary {
+  background: rgba(130, 110, 240, 0.20);
+  border-color: rgba(130, 110, 240, 0.35);
+  color: rgba(200, 180, 255, 0.95);
+  box-shadow: 0 1px 4px rgba(130, 110, 240, 0.10);
+}
+.wallpaper-popup-btn-primary:hover {
+  background: rgba(130, 110, 240, 0.30);
+  box-shadow: 0 2px 8px rgba(130, 110, 240, 0.20);
+}
+.wallpaper-popup-btn-danger {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.15);
+  color: rgba(239, 68, 68, 0.80);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20);
+}
+.wallpaper-popup-btn-danger:hover {
+  background: rgba(239, 68, 68, 0.18);
+  color: #ef4444;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.15);
+}
+
+.wallpaper-download-box {
+  padding: 4px 14px 10px;
+}
+.wallpaper-download-box entry {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #d8d8e8;
+  caret-color: rgba(160, 130, 255, 0.50);
+  min-height: 0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.wallpaper-download-box entry:focus {
+  border-color: rgba(160, 130, 255, 0.30);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 2px rgba(160, 130, 255, 0.06);
+}
+
+.wallpaper-download-status {
+  font-size: 12px;
+  color: #5a5a6e;
+  padding: 0 0 2px;
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ia",
+    "title": "Inteligencia Artificial",
+    "icon": "󰭹",
+    "desc": "Herramientas de IA",
+    "launchers": [
+      {
+        "id": "chatgpt",
+        "name": "ChatGPT",
+        "icon": "󰭹",
+        "desc": "ChatGPT web",
+        "exec": "xdg-open https://chat.openai.com"
+      },
+      {
+        "id": "ollama",
+        "name": "Ollama",
+        "icon": "󰭹",
+        "desc": "Chat local con Ollama",
+        "exec": "ollama run llama3",
+        "terminal": true
+      },
+      {
+        "id": "claude",
+        "name": "Claude",
+        "icon": "󰭹",
+        "desc": "Claude AI",
+        "exec": "xdg-open https://claude.ai"
+      }
+    ]
+  },
+  {
+    "id": "scripts",
+    "title": "Mis Scripts",
+    "icon": "󰓫",
+    "desc": "Automatizaciones y tareas",
+    "launchers": []
+  }
+]
