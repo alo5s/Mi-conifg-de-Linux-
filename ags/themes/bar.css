@@ -1,0 +1,43 @@
+window#bar {
+  background: rgba(19, 19, 26, 0.92);
+  border: none;
+}
+#bar-box {
+  background: transparent;
+  padding: 0 14px;
+  min-height: 38px;
+}
+.bar-module {
+  margin: 0 3px;
+  font-size: 13px;
+  color: #d8d8e8;
+}
+.bar-workspace-btn {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 7px;
+  margin: 0 1px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3a3a4a;
+  min-height: 0;
+}
+.bar-workspace-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #6a6a7a;
+}
+.bar-workspace-btn.active {
+  background: rgba(130, 110, 240, 0.15);
+  color: rgba(200, 180, 255, 0.90);
+}
+.bar-workspace-btn.occupied {
+  color: #7a7a8a;
+}
+.bar-icon {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 17px;
+}
+.bar-separator {
+  min-width: 6px;
+}

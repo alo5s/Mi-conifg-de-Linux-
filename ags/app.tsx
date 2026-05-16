@@ -6,6 +6,7 @@ import App from "ags/gtk4/app"
 import GLib from "gi://GLib?version=2.0"
 import AppLauncher from "./src/widgets/launcher"
 import OSD from "./src/widgets/OSD"
+import Bar from "./src/widgets/bar/Bar"
 
 const cfg = GLib.get_user_config_dir()
 
@@ -47,8 +48,10 @@ App.start({
 
   main() {
     App.apply_css(`${cfg}/ags/themes/osd.css`)
+    App.apply_css(`${cfg}/ags/themes/bar.css`)
     AppLauncher()
     OSD()
+    Bar()
     watchLauncherToggle()
   },
 
